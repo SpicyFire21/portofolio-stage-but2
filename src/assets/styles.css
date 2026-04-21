@@ -1,3 +1,6 @@
 @import './main.css';
 @import "./variables.css";
 @import "./layout.css";
+
+@import "tailwindcss";
+
