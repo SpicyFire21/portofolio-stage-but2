@@ -15,9 +15,9 @@
 
 <script setup>
 const buttons = [
-  {href:"#presentation",name:"presentation"},
-  {href:"#projets",name:"projets"},
-  {href:"#competences",name:"competences"},
-  {href:"#contact",name:"contact"},
+  {href:"#presentation",name:"Presentation"},
+  {href:"#entreprise",name:"Entreprise"},
+  {href:"#competences",name:"Compétences"},
+  {href:"#contact",name:"Contact"},
 ]
 </script>

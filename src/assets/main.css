@@ -1,4 +1,4 @@
-@import './variables.css';
+@import 'variables.css';
 
 *,
 *::before,
@@ -28,6 +28,7 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   font-weight: normal;
+
 }
 
 a,
