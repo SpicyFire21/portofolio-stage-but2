@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-center">
+  <header class="bg-[var(--dark-gray)] text-[var(--white)] flex justify-center">
     <nav class="flex gap-8">
       <a
           v-for="(item,index) in buttons"
@@ -17,6 +17,7 @@
 const buttons = [
   {href:"#presentation",name:"Presentation"},
   {href:"#entreprise",name:"Entreprise"},
+  {href:"#Stage",name:"Stage"},
   {href:"#competences",name:"Compétences"},
   {href:"#contact",name:"Contact"},
 ]

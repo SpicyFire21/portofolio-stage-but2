@@ -1,10 +1,12 @@
 <template>
   <Header/>
-  <main>
+  <main class="bg-[var(--dark-gray)] text-[var(--white)]">
     <Hero/>
     <Presentation/>
-    <Competences/>
     <Entreprise/>
+    <Stage/>
+
+    <Competences/>
     <Contact/>
   </main>
 </template>
@@ -16,4 +18,5 @@ import Presentation from "@/components/sections/Presentation.vue";
 import Competences from "@/components/sections/Competences.vue";
 import Entreprise from "@/components/sections/Entreprise.vue";
 import Contact from "@/components/sections/Contact.vue";
+import Stage from "@/components/sections/Stage.vue";
 </script>
