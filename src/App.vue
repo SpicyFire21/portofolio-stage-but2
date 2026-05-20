@@ -1,14 +1,20 @@
 <template>
-  <Header/>
-  <main class="bg-[var(--dark-gray)] text-[var(--white)]">
-    <Hero/>
-    <Presentation/>
-    <Entreprise/>
-    <Stage/>
 
-    <Competences/>
-    <Contact/>
-  </main>
+
+  <div class="flex flex-col bg-[var(--dark-gray)] text-[var(--white)] px-40">
+    <Header/>
+    <main class="">
+      <Hero/>
+      <Presentation/>
+      <Entreprise/>
+      <Stage/>
+
+      <Competences/>
+      <Contact/>
+    </main>
+  </div>
+
+
 </template>
 
 <script setup>

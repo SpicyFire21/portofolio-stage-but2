@@ -17,7 +17,7 @@
 const buttons = [
   {href:"#presentation",name:"Presentation"},
   {href:"#entreprise",name:"Entreprise"},
-  {href:"#Stage",name:"Stage"},
+  {href:"#stage",name:"Stage"},
   {href:"#competences",name:"Compétences"},
   {href:"#contact",name:"Contact"},
 ]
