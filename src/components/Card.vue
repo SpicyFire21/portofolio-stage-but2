@@ -1,55 +1,52 @@
+<!-- Card.vue -->
 <template>
-  <div class=" flex items-center justify-center p-6">
-    <div
-        class="flex flex-col justify-between items-center  min-w-80 h-full  w-full max-w-sm rounded-2xl bg-[var(--dark-gray)] shadow-xl overflow-hidden border border-[var(--indigo)]"
-    >
+  <article
+      class="h-full border border-[var(--muted)] bg-[var(--white)] p-6 flex flex-col justify-between gap-8 transition duration-200 hover:-translate-y-1 hover:border-zinc-700"
+  >
+    <div class="flex flex-col gap-5">
+      <h2 class="text-2xl font-semibold text-[var(--primary)] leading-tight">
+        {{ title }}
+      </h2>
 
-      <div>
-        <div class=" px-6 py-4">
-          <h2 class="text-xl font-semibold text-[var(--white)]">
-            {{props.title}}
-          </h2>
-        </div>
-
-        <div class="px-6 py-5">
-
-
-          <ul class="text-[var(--light-gray)]">
-            <li v-for="item in props.content">- {{item}}</li>
-          </ul>
-
-        </div>
-      </div>
-
-
-      <!-- Footer -->
-      <div class=" px-6 py-4 flex justify-end">
-        <button
-            class="rounded-lg bg-[var(--pink)] px-4 py-2 text-[var(--white)] transition hover:opacity-90"
+      <ul class="flex flex-col gap-3">
+        <li
+            v-for="item in content"
+            :key="item"
+            class="text-zinc-400 leading-7 flex gap-3"
         >
-          Action
-        </button>
-      </div>
+          <span class="text-[var(--primary)] mt-1">•</span>
 
+          <span>
+            {{ item }}
+          </span>
+        </li>
+      </ul>
     </div>
-  </div>
+
+    <div class="pt-2">
+      <div
+          class="w-full h-[1px] bg-[var(--muted)] mb-5"
+      />
+
+      <button
+          class="w-full border border-[var(--muted)  px-4 py-3  font-medium transition bg-[var(--primary)] text-[var(--white)]"
+      >
+        Voir plus
+      </button>
+    </div>
+  </article>
 </template>
 
 <script setup>
-
-const props = defineProps({
-  title:{
-    type:String,
-    default:"title"
+defineProps({
+  title: {
+    type: String,
+    default: "",
   },
-  content:{
-    type:String,
-    default:"content"
-  }
-})
 
+  content: {
+    type: Array,
+    default: () => [],
+  },
+});
 </script>
-
-<style scoped>
-
-</style>

@@ -1,15 +1,21 @@
 @import "tailwindcss";
 
 :root {
-    --white: #ffffff;
     --black: #181818;
-    --dark-gray: #222222;
-    --indigo: #2c3e50;
-    --light-gray: rgba(84, 84, 84, 0.65);
-    --pink: #dd00ff;
+    --white: #ffffff;
+    --text-variant: #3e4949;
+    --muted: #666;
+    --primary: #006063;
+    --primary-container: #007b7f;
+    --accent: #3cc;
+    --accent-soft: #c4fdff;
+
+
+
 }
 
 * {
     text-align: justify;
 
 }
+

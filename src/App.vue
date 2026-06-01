@@ -1,15 +1,16 @@
 <template>
 
 
-  <div class="flex flex-col bg-[var(--dark-gray)] text-[var(--white)] px-40">
+  <div class="flex flex-col bg-[var(--white)] text-[var(--primary)]">
     <Header/>
     <main class="">
       <Hero/>
+
       <Presentation/>
       <Entreprise/>
       <Stage/>
-
       <Competences/>
+
       <Contact/>
     </main>
   </div>
