@@ -1,16 +1,16 @@
 <template>
   <div
-      v-if="selected"
+      v-if="stageStore.selected"
       class="fixed inset-0 bg-black/60 flex items-center justify-center"
       @click.self="close"
   >
     <div class="bg-[var(--white)] p-8 rounded-2xl w-[600px]">
       <h2 class="text-2xl text-[var(--black)] mb-4">
-        {{ selected.title }}
+        {{ stageStore.selected.title }}
       </h2>
 
       <p class="text-[var(--muted)]">
-       {{selected.details}}
+       {{stageStore.selected.details}}
       </p>
 
 
@@ -19,14 +19,16 @@
 </template>
 
 <script setup>
-const props = defineProps({
-  selected: Object
-})
+import {useStageStore} from "@/stores/stage.js";
+
+
+
+const stageStore = useStageStore();
 
 const emit = defineEmits(["close"])
 
 function close() {
-  emit("close")
+  stageStore.setSelected(null)
 }
 
 function getImg(name) {

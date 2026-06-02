@@ -27,18 +27,15 @@
       />
     </div>
 
-    <StageDialog
-        :selected="selected"
-        @close="selected = null"
-    />
+
 
   </section>
 </template>
 
 <script setup>
 import Card from "@/components/Card.vue";
-import StageDialog from "@/components/StageDialog.vue";
 import {ref} from "vue";
+import {useStageStore} from "@/stores/stage.js";
 
 const cards = [
   {
@@ -142,10 +139,10 @@ const cards = [
   }
 ];
 
-const selected = ref(null)
+const stageStore = useStageStore();
 
 function openDialog(data) {
-  selected.value = data
+  stageStore.setSelected(data)
 }
 
 
