@@ -1,5 +1,5 @@
 <template>
-  <section id="competences" class="border-t border-b border-[var(--primary)] w-full mx-auto  py-24 flex flex-col gap-8">
+  <section id="competences" class="w-full mx-auto  py-24 flex flex-col gap-8">
 
     <div class="flex flex-col gap-4 px-24 ">
       <h1 class="pb-2 text-5xl font-bold text-[var(--black)]">

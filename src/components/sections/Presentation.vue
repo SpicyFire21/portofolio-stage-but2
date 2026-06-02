@@ -1,5 +1,5 @@
 <template>
-  <section id="presentation" class="border-t border-b border-[var(--primary)] px-25 py-24">
+  <section id="presentation" class="border-t border-[var(--primary)] px-25 py-24">
 
     <h1 class="pb-2 text-5xl font-bold text-[var(--black)]">Presentation
     </h1>

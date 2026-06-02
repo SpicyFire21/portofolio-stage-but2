@@ -3,7 +3,7 @@
 
   <div class="flex flex-col bg-[var(--white)] text-[var(--primary)] ">
     <Header/>
-    <main class="">
+    <main class="mx-10 border-l border-r border-[var(--primary)]">
       <Hero/>
 
       <Presentation v-reveal/>

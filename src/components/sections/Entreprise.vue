@@ -1,5 +1,5 @@
 <template>
-  <section id="entreprise" class="border-t border-b border-[var(--primary)] py-24 px-25">
+  <section id="entreprise" class="border-t  border-[var(--primary)] py-24 px-25">
     <h1 class="pb-2 text-5xl font-bold text-[var(--black)]">
       Entreprise
     </h1>

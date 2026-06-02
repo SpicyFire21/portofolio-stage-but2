@@ -5,6 +5,7 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import scrollReveal from "@/directives/scrollReveal.js";
+import '@fortawesome/fontawesome-free/css/all.css';
 
 
 const app = createApp(App)
