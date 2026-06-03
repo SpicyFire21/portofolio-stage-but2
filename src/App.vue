@@ -4,31 +4,24 @@
   <div class="flex flex-col bg-[var(--white)] text-[var(--primary)] ">
     <Header/>
     <main class="mx-10 border-l border-r border-[var(--primary)]">
-      <Hero/>
 
-      <Presentation v-reveal/>
-      <Entreprise v-reveal/>
-      <Stage v-reveal/>
-      <Competences v-reveal/>
+      <RouterView/>
 
-      <Contact/>
+
     </main>
   </div>
-  <StageDialog/>
+
 
 </template>
 
 <script setup>
-import Hero from "@/components/layout/Hero.vue";
 import Header from "@/components/layout/Header.vue";
-import Presentation from "@/components/sections/Presentation.vue";
-import Competences from "@/components/sections/Competences.vue";
-import Entreprise from "@/components/sections/Entreprise.vue";
-import Contact from "@/components/sections/Contact.vue";
-import Stage from "@/components/sections/Stage.vue";
-import StageDialog from "@/components/StageDialog.vue";
+
+import StageDialog from "@/components/old/StageDialog.vue";
 import {useStageStore} from "@/stores/stage.js";
+import Section from "@/components/Section.vue";
 
 const stageStore = useStageStore()
+
 
 </script>

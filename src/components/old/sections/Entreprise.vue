@@ -9,7 +9,7 @@
 
 
     <div class="flex flex-col items-center">
-      <img class="logo" src="@/assets/img/intiReality_logo.png" alt="" @click="goTo()">
+      <img class="logo" src="../../../assets/img/intiReality_logo.png" alt="" @click="goTo()">
       <em>cliquez sur le logo pour aller sur le site de l'entreprise !</em>
     </div>
 

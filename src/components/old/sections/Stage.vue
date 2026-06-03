@@ -33,7 +33,7 @@
 </template>
 
 <script setup>
-import Card from "@/components/Card.vue";
+import Card from "@/components/old/Card.vue";
 import {ref} from "vue";
 import {useStageStore} from "@/stores/stage.js";
 
