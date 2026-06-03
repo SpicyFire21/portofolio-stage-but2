@@ -1,6 +1,12 @@
 <template>
-  <header class="bg-[var(--dark-gray)] p-5 border-b border-[var(--primary)] text-[var(--white)] flex justify-center">
-    <nav class="flex gap-16">
+  <header class="z-9999 fixed w-full bg-[var(--white)]  border-b border-[var(--primary)] text-[var(--white)] flex flex-col items-center justify-center">
+    <div class="text-black py-2 flex gap-5">
+      <p>KHNAGUI Adam</p>
+
+      <p>
+        adam.khnagui@edu.univ-fcomte.fr</p>
+    </div>
+    <nav class="flex gap-16 pb-2">
       <a
           v-for="(item,index) in buttons"
           :key="index"

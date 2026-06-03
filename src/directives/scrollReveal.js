@@ -13,7 +13,7 @@ export default {
                 observer.unobserve(el)
             }
         }, {
-            threshold: 0.3
+            threshold: 0.1
         })
 
         observer.observe(el)
