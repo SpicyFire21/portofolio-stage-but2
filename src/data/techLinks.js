@@ -1,9 +1,25 @@
+import logo from "@/assets/prog/Docker.webp"
+
+
 export const links = [
     {
         label: "Développement d'interface web avec React Typescript",
         to: "/tech/1",
         content:"<ul> <li>Créer des composants réutilisables</li> <li>Organiser l’architecture d’une application frontend</li> <li>Connecter le frontend à une API REST </li></ul>"
-
+,
+        carrousel:[
+            {
+                text: "Présentation de l'architecture frontend",
+                image: logo
+            },
+            {
+                text: "Refactoring du backend"
+            },
+            {
+                text: "Déploiement Kubernetes",
+                image: logo
+            }
+        ]
     },
     {
         label: "Refactoring du backend",
