@@ -27,7 +27,7 @@ const route = useRoute()
 
 defineProps({
   links: {
-    type: String,
+    type: Array,
     required: true
   },
 

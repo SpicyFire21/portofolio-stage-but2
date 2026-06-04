@@ -3,7 +3,7 @@
       title="Suivi de projet"
       subtitle=""
       text=""
-      image=""
+      :image=[]
   > </Section>
   <SectionNavBar :links="links"/>
 </template>

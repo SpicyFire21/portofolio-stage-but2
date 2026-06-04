@@ -3,7 +3,7 @@
       title="Technique"
       subtitle=""
       text=""
-      image=""
+      :image=[]
   > </Section>
   <SectionNavBar :links="links"/>
   <RouterView/>

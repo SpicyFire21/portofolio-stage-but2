@@ -3,47 +3,54 @@
   <section
       class="w-full px-25 py-20 border-t border-[var(--muted)]"
   >
-    <div
-        class="grid gap-12 items-center"
-        :class="image ? 'grid-cols-1 lg:grid-cols-2' : 'grid-cols-1'"
-    >
-      <!-- Contenu -->
-      <div class="flex flex-col gap-6">
-        <div class="flex flex-col gap-3">
-          <span
-              v-if="subtitle"
-              class="text-sm uppercase tracking-widest text-zinc-400"
-          >
-            {{ subtitle }}
-          </span>
+    <div class="grid gap-12 items-start">
+      <!-- Header -->
+      <div class="flex flex-col gap-3">
+        <span
+            v-if="subtitle"
+            class="text-sm uppercase tracking-widest text-zinc-400"
+        >
+          {{ subtitle }}
+        </span>
 
-          <h1 class="text-5xl font-bold text-[var(--primary)]">
-            {{ title }}
-          </h1>
-        </div>
-        <!-- Image facultative -->
+        <h1 class="text-5xl font-bold text-[var(--primary)]">
+          {{ title }}
+        </h1>
+      </div>
+
+      <!-- Contenu -->
+      <div
+          class="grid gap-10 items-start"
+          :class="image.length ? 'lg:grid-cols-2' : 'grid-cols-1'"
+      >
+
+        <!-- Images -->
         <div
-            v-if="image"
-            class="w-full flex justify-center"
+            v-if="image.length > 0"
+            class="grid grid-cols-1 sm:grid-cols-2 gap-4"
         >
           <img
-              :src="image"
+              v-for="img in image"
+              :key="img"
+              :src="img"
               :alt="title"
-              class="max-w-full rounded-2xl object-cover"
+              class="w-full rounded-2xl object-cover border border-zinc-200"
           >
         </div>
 
+        <!-- Texte -->
+        <div class="flex flex-col gap-6">
+          <p
+              v-if="text"
+              class="text-zinc-500 leading-8 whitespace-pre-line"
+              v-html="text"
+          />
 
-        <!-- Slot libre -->
-        <slot />
+          <!-- Slot libre -->
+          <slot />
+        </div>
+
       </div>
-      <p
-          v-if="text"
-          class="text-zinc-500 leading-8 whitespace-pre-line"
-      >
-        {{ text }}
-      </p>
-
     </div>
   </section>
 </template>
@@ -66,8 +73,8 @@ defineProps({
   },
 
   image: {
-    type: String,
-    default: ""
+    type: Array,
+    default: () => []
   }
 })
 </script>

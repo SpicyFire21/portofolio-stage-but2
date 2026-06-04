@@ -3,7 +3,7 @@
       title="Integration"
       subtitle=""
       text=""
-      image=""
+      :image=[]
   > </Section>
   <SectionNavBar :links="links"/>
 </template>

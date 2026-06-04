@@ -1,40 +1,63 @@
 <template>
-  <div>
+  <div class="flex flex-col items-center">
     <Section
         title="Presentation"
         subtitle=""
-        text="Bienvenue sur mon portfolio, réalisé dans le cadre de mon stage de 2e année en BUT Informatique. Vous y découvrirez les compétences que j’ai développées tout au long de mon stage en Bachelor Universitaire de Technologie, ainsi que des exemples concrets du projet DETEK dans lequel j'ai travaillé durant mon stage de quatrième semestre. Ce portfolio met en lumière les connaissances techniques et professionnelles que j’ai pu acquérir et mettre en pratique dans un contexte réel.
+        text="Bienvenue sur mon portfolio, réalisé dans le cadre de mon stage de 2e année en BUT Informatique. Vous y découvrirez les compétences que j’ai développées tout au long de mon stage, sur l'entreprise, ainsi que des exemples concrets du projet DETEK dans lequel j'ai travaillé durant mon stage de quatrième semestre. Ce portfolio met en lumière les connaissances techniques et professionnelles que j’ai pu acquérir et mettre en pratique dans un contexte réel.
 
 IntiReality Solutions est une entreprise qui utilise la vision IA afin de développer des solutions pour des objectifs industriels. Dirigée par Luis CONTRERAS, ainsi que son frère Alvaro CONTRERAS. L'entreprise exerce ses activités à Besançon et est surtout spécialisé dans la vision IA."
-        image=""
-    >
+        :image=[]
+    ></Section>
 
-    </Section>
 
     <Section
-        title="Contexte"
+        title="Entreprise : Qui est IntiReality Solutions"
         subtitle=""
-        text="Lors de mon stage, j'ai travaillé sur le developpement et deploiement du projet DETEK, une application web qui applique des processus de vision et d'analyse afin d'aider les industrielles dans leurs productions de pièces. "
-        :image="logo"
-    >
+        text="IntiReality Solutions est une entreprise localisée à Besançon spécialisée dans l'automatisation de productions industrielles via l'utilisation de vision Artificielle, c'est pourquoi ils développent une application web qui se nomme DETEK afin de proposer aux industriels un moyen efficace de controler leur productions de pièces selon des cas d'usages proposés par l'application. IntiReality Solutions a pour objectif de déployer DETEK localement chez les industriels."
+        :image="[logo]"
+    ></Section>
+    <Section
+        title="Entreprise : L'équipe"
+        subtitle=""
+        text="
+        L'effectif de IntiReality Solutions est de 5 personnes, tout le monde touche à tout les domaines tel que la vision artificielle mais aussi le développement d'application."
+        :image="[]"
+    ></Section>
+    <Section
+        title="Entreprise : Les moyens de travail"
+        subtitle=""
+        text="Pour ce qu'il s'agit des moyens de travail, l'entreprise possède un petit local assez grand pour avoir deux bureaux. Au début de mon stage, j'ai travaillé sur un NUC qu'on m'a fourni, par la suite, on m'a fourni un deuxième NUC afin que je puisse m'essayer au déploiement en cluster sur plusieurs NUCs."
+        :image="[]"
+    ></Section>
 
-    </Section>
+    <Section
+        title="Sujet : Quel est mon sujet ?"
+        subtitle=""
+        text="Lors de mon stage chez Intireality Solutions,j'ai eu l'occassion de travailler sur le projet DETEK, en tant que développeur Full-Stack, afin de développer des fonctionnalités mais aussi de reorganisaer le code existant. j'ai du aussi travailler sur le deploiement de l'application en cluster multi-NUCs."
+        :image="[]"
+    ></Section>
+    <Section
+        title="Sujet : Les objectifs"
+        subtitle=""
+        :text="`Les objectifs principaux était de deployer DETEK dans un cluster multi NUCs mais aussi d'ajouter des fonctionnalités au projet tel qu'une authentification JWT avec droit, un système de logs. Deplus, j'ai aussi proposé des choix d'architecture afin de rendre le code de DETEK plus évolutif. `"
+        :image="[]"
+    ></Section>
+    <Section
+        title="Sujet : Les enjeux"
+        subtitle=""
+        :text="`Les enjeux de ce projet sont de faire gagner du temps aux usines afin de les aider à assurer la production de pièces en bonne état.`"
+        :image="[]"
+    ></Section>
+
+
 
     <Section
         title="Synthèse"
         subtitle=""
-        text="Lors de mon stage, j'ai pu developpé mes compétences dans différents domaines, a commencé par le développement Frontend. J'ai developpé mes compétences sur le framework React avec l'utilisation de TypeScript dans la réalisation d'interfaces web et aussi dans la réorganisation de ces dernières.
-
-      J'ai également travaillé sur la partie backend ou j'y ai passé le principale de mon temps, j'ai proposé une architecture pour une nouvelle version du backend afin d'améliorer l'évolutivité du code et rendre le deploiement en cluster plus facilement. J'ai pour cela travaillé avec le language python en utilisant la librairie FastAPI pour l'implémentation d'une API REST.
-      De plus, J'ai aussi travaillé sur la base de donnée en propsant sur plusieurs tiérations des versions d'un MCD afin de pouvoir mettre à jour la base de donnée pour proposer une version normalisée de cette dernière. Cela m'a aussi donné l'occasion de voir du code permettant d'appliquer une analyse image en temps réel.
-
-      J'ai exploré le deploiement en cluster multi-NUC en utlisant la plateforme de gestion de conteneurs kubernetes et le conteneur docker.
-
-      Enfin, j'ai aussi exploré le deploiement de services tel que le serveur S3 garage ainsi que le bus de message NATS, dans l'objectif de pouvoir le deployer dans la version finale du cluster.
-
-"
-        image=""
+        :text="`Lors de mon stage chez IntiReality Solutions, j'ai mobilisé plusieurs savoir-faire généraux dans le cadre du développement d'application web. J'ai notamment développé des compétences en <b><u>Développement d'interface web avec React Typescript</u></b>, en les rendant réutilisable au mieux tout en assurant une connexion stable avec le backend. J'ai également proposé un <b><u>refactoring du backend</u></b> en suivant au mieux le plan d'architecture que j'ai proposé pour l'implémentation future en cluster tout en ajoutant des fonctionnalités tels qu'une <b><u>authentification JWT persistante coté serveur</u></b> en assurant au mieux de prévenir de certaines attaques courantes auquel cette stratégie d'authentification est sensible. J'ai aussi proposer un <b><u>déploiement en cluster multi NUCs</u></b> dans l'objectif de déployer le projet en local chez les industriels. Ce stage m'a aussi donnée l'occasio de développé mon savoir-faire en suivi de projet via des <b><u>réunions avec l'équipe un jour sur deux</u></b> afin de partager l'avancement et les objectifs suivants de chacun, mais aussi sur <b><u>la gestion du code avec Gitlab</u></b>. Enfin, mon entégration dans l'entreprise a été marqué par la <b><u>prise en main d'un projet développé via Intelligence Artificielle</u></b> ainsi que les <b><u>echanges avec les différentes membres de l'équipe.</u></b>`"
+        :image=[]
     >
+      <Bulles :tech="tech"/>
 
     </Section>
   </div>
@@ -43,9 +66,78 @@ IntiReality Solutions est une entreprise qui utilise la vision IA afin de dével
 <script setup>
 import logo from "@/assets/img/intiReality_logo.png"
 import Section from "@/components/Section.vue";
+import Bulles from "@/components/Bulles.vue";
+
+
+const tech = [
+  {
+    name: "React",
+    image: "React",
+    description: "Framework Javascript",
+    color: "bg-cyan-400"
+  },
+
+  {
+    name: "TypeScript",
+    image: "TypeScript",
+    description: "Version typée de JavaScript",
+    color: "bg-blue-500"
+  },
+
+  {
+    name: "CSS",
+    image: "CSS",
+    description: "Langage de style",
+    color: "bg-sky-500"
+  },
+
+  {
+    name: "Python",
+    image: "Python",
+    description: "Backend avec FastAPI",
+    color: "bg-yellow-400"
+  },
+
+  {
+    name: "PostgreSQL",
+    image: "PostgreSQL",
+    description: "Base de données relationnelle",
+    color: "bg-indigo-500"
+  },
+
+  {
+    name: "Kubernetes",
+    image: "Kubernetes",
+    description: "Orchestrateur de conteneurs",
+    color: "bg-blue-400"
+  },
+
+  {
+    name: "Docker",
+    image: "Docker",
+    description: "Conteneurisation",
+    color: "bg-sky-400"
+  },
+
+  {
+    name: "Garage",
+    image: "Garage",
+    description: "Serveur S3 multi noeuds",
+    color: "bg-orange-400"
+  },
+
+  {
+    name: "NATS",
+    image: "NATS",
+    description: "Bus de message",
+    color: "bg-green-400"
+  },
+  {
+    name: "GIT",
+    image: "GIT",
+    description: "Système de contrôle de version",
+    color: "bg-green-400"
+  }
+]
+
 </script>
-
-
-<style scoped>
-
-</style>
