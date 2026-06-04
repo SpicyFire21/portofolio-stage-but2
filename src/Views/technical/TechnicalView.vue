@@ -12,18 +12,8 @@
 
 import Section from "@/components/Section.vue";
 import SectionNavBar from "@/components/SectionNavBar.vue";
+import {links} from "@/data/techLinks.js";
 
-const links = [
-  {
-    label: "trace 1",
-    to: "/tech/1"
-  },
-  {
-    label: "bilan",
-    to: "/tech/bilan"
-  },
-
-]
 </script>
 
 

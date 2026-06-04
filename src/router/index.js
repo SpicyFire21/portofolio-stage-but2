@@ -1,9 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from "@/Views/HomeView.vue";
-import TechnicalView from "@/Views/TechnicalView.vue";
-import ProjectView from "@/Views/ProjectView.vue";
-import IntegrationView from "@/Views/IntegrationView.vue";
+import TechnicalView from "@/Views/technical/TechnicalView.vue";
+import ProjectView from "@/Views/project/ProjectView.vue";
+import IntegrationView from "@/Views/integration/IntegrationView.vue";
 import Section from "@/components/Section.vue";
+import IntegrationDetailView from "@/Views/integration/IntegrationDetailView.vue";
+import ProjectDetailView from "@/Views/project/ProjectDetailView.vue";
+import TechnicalDetailView from "@/Views/technical/TechnicalDetailView.vue";
 
 
 const routes =[
@@ -20,7 +23,7 @@ const routes =[
             {
                 path: ':nameTrace',
                 name: '',
-                component: Section
+                component: TechnicalDetailView
             },
         ]
     },
@@ -32,7 +35,7 @@ const routes =[
             {
                 path: ':nameTrace',
                 name: '',
-                component: Section
+                component: ProjectDetailView
             },
         ]
     },
@@ -44,7 +47,7 @@ const routes =[
             {
                 path: ':nameTrace',
                 name: '',
-                component: Section
+                component: IntegrationDetailView
             },
         ]
     },

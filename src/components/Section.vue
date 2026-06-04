@@ -6,16 +6,18 @@
     <div class="grid gap-12 items-start">
       <!-- Header -->
       <div class="flex flex-col gap-3">
-        <span
-            v-if="subtitle"
-            class="text-sm uppercase tracking-widest text-zinc-400"
-        >
-          {{ subtitle }}
-        </span>
+
 
         <h1 class="text-5xl font-bold text-[var(--primary)]">
           {{ title }}
         </h1>
+
+        <span
+            v-if="subtitle"
+            class="text-xl uppercase tracking-widest text-zinc-400"
+        >
+          {{ subtitle }}
+        </span>
       </div>
 
       <!-- Contenu -->

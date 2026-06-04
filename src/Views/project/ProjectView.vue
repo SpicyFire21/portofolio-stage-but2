@@ -1,28 +1,21 @@
 <template>
   <Section
-      title="Integration"
+      title="Suivi de projet"
       subtitle=""
       text=""
       :image=[]
   > </Section>
   <SectionNavBar :links="links"/>
+  <RouterView/>
+
 </template>
 <script setup>
 
 import Section from "@/components/Section.vue";
 import SectionNavBar from "@/components/SectionNavBar.vue";
+import {links} from "@/data/projLinks.js";
 
-const links = [
-  {
-    label: "trace 1",
-    to: "/integration/1"
-  },
-  {
-    label: "bilan",
-    to: "/integration/bilan"
-  },
 
-]
 </script>
 
 

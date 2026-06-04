@@ -3,7 +3,7 @@
 
   <div class="flex flex-col bg-[var(--white)] text-[var(--primary)] ">
     <Header/>
-    <main class="mx-10 border-l border-r border-[var(--primary)]">
+    <main class="h-screen mx-10 border-l border-r border-[var(--primary)]">
 
       <RouterView/>
 
