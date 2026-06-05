@@ -13,7 +13,7 @@
         Avant stage
       </span>
 
-      <div class="flex-1 h-4 bg-zinc-200 rounded-full overflow-hidden">
+      <div class="flex-1 h-2 bg-zinc-200 rounded-full overflow-hidden">
         <div
             class="h-full rounded-full transition-all duration-500"
             :class="beforeColor"
@@ -32,7 +32,7 @@
         Après stage
       </span>
 
-      <div class="flex-1 h-4 bg-zinc-200 rounded-full overflow-hidden">
+      <div class="flex-1 h-2 bg-zinc-200 rounded-full overflow-hidden">
         <div
             class="h-full rounded-full transition-all duration-500"
             :class="afterColor"
