@@ -1,39 +1,42 @@
 <template>
   <div class="w-full flex flex-col items-center">
 
-    <div class="relative w-full max-w-4xl flex items-center justify-center">
+    <div class="relative w-full max-w-5xl flex items-center justify-center">
 
       <!-- Left -->
-      <button
-          @click="prev"
-          class="absolute left-4 z-10 text-4xl text-zinc-400 hover:text-black"
-      >
-        ←
-      </button>
+      <button @click="prev" class="absolute left-4 z-10 text-4xl text-zinc-400 hover:text-black">←</button>
 
       <!-- Slide -->
-      <div
-          class="w-full h-[600px] px-20 py-8 overflow-hidden"
-      >
+      <div class=" border w-full px-20 py-8 overflow-hidden">
 
-        <div class="h-full flex flex-col gap-6">
+        <div class=" border h-full flex justify-center gap-6">
 
           <!-- Text -->
-          <div
-              class="text-zinc-500 leading-8 whitespace-pre-line overflow-y-auto"
-              v-html="slides[currentIndex].text"
-          ></div>
+          <div class="flex flex-col justify-center">
+            <h1 class="text-2xl font-bold mb-6 text-black">
+              {{ slides[currentIndex].title }}
+            </h1>
+
+            <div
+                class="min-w-0 w-full max-w-[400px] text-zinc-500 leading-8 whitespace-pre-line break-words"
+                v-html="slides[currentIndex].text"
+            ></div>
+          </div>
+
 
           <!-- Optional image -->
           <div
-              v-if="slides[currentIndex].image"
-              class="flex-1 overflow-hidden"
+              v-if="slides[currentIndex].images"
+              class="flex items-center overflow-hidden"
           >
-            <img
-                :src="slides[currentIndex].image"
-                alt=""
-                class="w-full h-full object-contain"
-            />
+<!--            <ImagePreview-->
+<!--                :src="slides[currentIndex].image"-->
+<!--                alt=""-->
+<!--                imgClass="w-100 h-100 object-contain"-->
+<!--            />-->
+
+
+            <ImageCarrousel :images="slides[currentIndex].images" />
           </div>
 
         </div>
@@ -41,12 +44,7 @@
       </div>
 
       <!-- Right -->
-      <button
-          @click="next"
-          class="absolute right-4 z-10 text-4xl text-zinc-400 hover:text-black"
-      >
-        →
-      </button>
+      <button @click="next" class="absolute right-4 z-10 text-4xl text-zinc-400 hover:text-black">→</button>
 
     </div>
 
@@ -72,6 +70,8 @@
 
 <script setup>
 import { ref } from "vue"
+import ImagePreview from "@/components/ImagePreview.vue";
+import ImageCarrousel from "@/components/ImageCarrousel.vue";
 
 const props = defineProps({
   slides: {

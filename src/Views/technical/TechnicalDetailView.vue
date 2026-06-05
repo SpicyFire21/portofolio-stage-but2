@@ -5,7 +5,7 @@
       :text="currentTech.content"
       :image=[]
   > </Section>
- <carrousel :slides="currentTech.carrousel"/>
+ <carrousel v-if="currentTech.carrousel" :slides="currentTech.carrousel"/>
 </template>
 
 <script setup>

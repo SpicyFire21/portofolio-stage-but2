@@ -1,7 +1,7 @@
 <!-- SectionBlock.vue -->
 <template>
   <section
-      class="w-full px-25 py-20 border-t border-[var(--muted)]"
+      class="w-full px-25 pt-25 pb-0"
   >
     <div class="grid gap-12 items-start">
       <!-- Header -->
