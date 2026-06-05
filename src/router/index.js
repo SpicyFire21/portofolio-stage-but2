@@ -7,6 +7,9 @@ import Section from "@/components/Section.vue";
 import IntegrationDetailView from "@/Views/integration/IntegrationDetailView.vue";
 import ProjectDetailView from "@/Views/project/ProjectDetailView.vue";
 import TechnicalDetailView from "@/Views/technical/TechnicalDetailView.vue";
+import TechnicalBilanView from "@/Views/technical/TechnicalBilanView.vue";
+import ProjectBilanView from "@/Views/project/ProjectBilanView.vue";
+import IntegrationBilanView from "@/Views/integration/IntegrationBilanView.vue";
 
 
 const routes =[
@@ -25,6 +28,11 @@ const routes =[
                 name: '',
                 component: TechnicalDetailView
             },
+            {
+                path: 'bilan',
+                name: '',
+                component: TechnicalBilanView
+            },
         ]
     },
     {
@@ -37,6 +45,11 @@ const routes =[
                 name: '',
                 component: ProjectDetailView
             },
+            {
+                path: 'bilan',
+                name: '',
+                component: ProjectBilanView
+            },
         ]
     },
     {
@@ -48,6 +61,11 @@ const routes =[
                 path: ':nameTrace',
                 name: '',
                 component: IntegrationDetailView
+            },
+            {
+                path: 'bilan',
+                name: '',
+                component: IntegrationBilanView
             },
         ]
     },

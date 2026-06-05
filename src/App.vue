@@ -17,7 +17,6 @@
 <script setup>
 import Header from "@/components/layout/Header.vue";
 
-import StageDialog from "@/components/old/StageDialog.vue";
 import {useStageStore} from "@/stores/stage.js";
 import Section from "@/components/Section.vue";
 
