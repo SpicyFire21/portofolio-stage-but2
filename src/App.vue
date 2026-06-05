@@ -7,8 +7,9 @@
 
       <RouterView/>
 
-
+      <Footer/>
     </main>
+
   </div>
 
 
@@ -19,6 +20,7 @@ import Header from "@/components/layout/Header.vue";
 
 import {useStageStore} from "@/stores/stage.js";
 import Section from "@/components/Section.vue";
+import Footer from "@/components/layout/Footer.vue";
 
 const stageStore = useStageStore()
 

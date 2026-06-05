@@ -1,7 +1,7 @@
 <template>
   <header class="z-99 fixed w-full bg-[var(--white)]  border-b border-[var(--primary)] text-[var(--white)] flex flex-col items-center justify-center">
     <div class="text-black py-2 flex gap-5">
-      <p>KHNAGUI Adam</p>
+      <p>Adam KHNAGUI </p>
       <p>adam.khnagui@edu.univ-fcomte.fr</p>
     </div>
     <nav class="flex gap-16 pb-2">
