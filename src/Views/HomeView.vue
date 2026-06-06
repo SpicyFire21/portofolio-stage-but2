@@ -15,8 +15,9 @@ IntiReality Solutions est une entreprise qui utilise la vision IA afin de dével
         subtitle=""
         :text="`<b>IntiReality Solutions</b> est une entreprise localisée à <b>Besançon</b> spécialisée dans <b>l'automatisation de productions industrielles via l'utilisation de vision artificielle</b>, c'est pourquoi ils développent une <b>application web</b> qui se nomme <b>DETEK</b> afin de proposer aux industriels un moyen efficace de <b>contrôler leurs productions de pièces</b> selon des cas d'usages proposés par l'application. <b>IntiReality Solutions</b> a pour objectif de <b>déployer DETEK localement chez les industriels.</b>`"
         :image="[logo]"
+        link="https://intireality.com/fr"
     ></Section>
-
+      <em class="pt-10">Cliquez sur le logo pour visiter le site de l'entreprise.</em>
     <Section
         title="Entreprise : L'équipe"
         subtitle=""

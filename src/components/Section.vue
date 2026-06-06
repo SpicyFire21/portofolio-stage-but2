@@ -36,8 +36,10 @@
               :key="img"
               :src="img"
               :alt="title"
+              @click="redirect"
               class="w-full rounded-2xl object-cover border border-zinc-200"
-          >
+              :class="props.link ? 'cursor-pointer' : ''"
+          />
         </div>
 
         <!-- Texte -->
@@ -58,7 +60,7 @@
 </template>
 
 <script setup>
-defineProps({
+const props =defineProps({
   title: {
     type: String,
     required: true
@@ -77,6 +79,17 @@ defineProps({
   image: {
     type: Array,
     default: () => []
-  }
+  },
+  link: {
+    type: String,
+    default: ""
+  },
 })
+
+function redirect() {
+  if (props.link) {
+    window.location.href = props.link
+  }
+}
+
 </script>
