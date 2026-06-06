@@ -28,14 +28,14 @@ IntiReality Solutions est une entreprise qui utilise la vision IA afin de dével
     <Section
         title="Entreprise : Les moyens de travail"
         subtitle=""
-        :text="`Pour ce qui est des moyens de travail, l'entreprise possède un petit local assez grand pour avoir deux bureaux. Au début de mon stage, j'ai travaillé sur un <b>NUC</>b> qu'on m'a fourni, par la suite, on m'a fourni un deuxième NUC afin que je puisse m'essayer au <b>déploiement en cluster sur plusieurs NUCs.<b>`"
+        :text="`Pour ce qui est des moyens de travail, l'entreprise possède un petit local assez grand pour avoir deux bureaux. Au début de mon stage, j'ai travaillé sur un <b>NUC</b> qu'on m'a fourni, par la suite, on m'a fourni un deuxième NUC afin que je puisse m'essayer au <b>déploiement en cluster sur plusieurs NUCs.</b>`"
         :image="[]"
     ></Section>
 
     <Section
         title="Sujet : Quel est mon sujet ?"
         subtitle=""
-        :text="`Lors de mon stage chez Intireality Solutions, j'ai eu l'occasion de travailler sur le projet <b>DETEK</>b>, en tant que <b>développeur Full-Stack</b>, afin de <b>développer des fonctionnalités</b> mais aussi de <b>réorganiser le code</b> existant. J'ai dû aussi travailler sur le <b>déploiement de l'application en cluster multi-NUCs.</b>`"
+        :text="`Lors de mon stage chez Intireality Solutions, j'ai eu l'occasion de travailler sur le projet <b>DETEK</b>, en tant que <b>développeur Full-Stack</b>, afin de <b>développer des fonctionnalités</b> mais aussi de <b>réorganiser le code</b> existant. J'ai dû aussi travailler sur le <b>déploiement de l'application en cluster multi-NUCs.</b>`"
         :image="[]"
     ></Section>
 
