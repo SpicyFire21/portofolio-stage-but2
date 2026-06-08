@@ -22,7 +22,7 @@ IntiReality Solutions est une entreprise qui utilise la vision IA afin de dével
         title="Entreprise : L'équipe"
         subtitle=""
         :text="`
-        L'effectif de IntiReality Solutions est de <b>5 personnes</b>, tout le monde touche à tous les domaines tels que la vision artificielle mais aussi le développement d'application.`"
+        L'effectif de IntiReality Solutions est de <b>4 personnes</b>, tout le monde touche à tous les domaines tels que la vision artificielle mais aussi le développement d'application.`"
         :image="[]"
     ></Section>
 
